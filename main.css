@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Source+Code+Pro:wght@300&display=swap');
+.nav-link {
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display';
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-size: 4rem;
+}
+
+p {
+    margin: 0;
+}
+
+p, .btn {
+    font-family: 'Roboto Flex';
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+    border-radius: 0;
+    margin-top: 1rem;
+}
+
+header {
+    height: 100vh;
+    background-image: url('./img/main.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header, .about, .catalog, .CTA, .blog {
+    margin-bottom: 8rem;
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+}
+
+.card-img-top {
+    border-radius: 0px;
+}
+
+.card {
+    border: 0px;
+}
+
+.card-body {
+    padding: 1rem 0;
+}
+
+.catalog-header {
+    margin-bottom: 4rem;
+}
+
+.CTA {
+    background-image: url('./img/form_bg.png');
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contacts {
+    background-image: url(./img/contact_img.png);
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* faq */
+/* .faq h3 {
+    font-family: 'Cormorant SC';
+    font-size: 1.1rem;
+} */
+
+.faq-main {
+    width: 960px;
+    margin: 0 auto;
+}
+.faq h3 {
+    font-family: 'Roboto Flex';
+    font-size: 1.2rem;
+}
+.faq h2 {
+    font-weight: 500;
+    font-size: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq p {
+    font-family: 'Roboto Flex';
+    font-size: 1.1rem;
+    padding-top: 1.2rem;
+}
+.faq {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.question-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq.active .answer {
+    max-height: max-content;
+    animation: fade 1.4s ease-in-out;
+
+}
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: (0px);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #f69a73
+    
+;
+}
+.decor {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: white;
+    border-radius: 30px;
+}
+.form-left-decoration, .form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #010101;
+    border-radius: 20px;
+}
+.form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+}
+.form-right-decoration {
+    top: 60px;
+    right: -30px;
+}
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+}
+.form-left-decoration:before {
+    top: -20px;
+}
+.form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+}
+.form-right-decoration:before {
+    top: -20px;
+    right: 0;
+}
+.form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+}
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+.form-inner {
+    padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #010101;
+    border-bottom: 4px solid #201f1e;
+    color: white;
+    font-size: 14px;
+}
+.form-inner textarea {
+    resize: none;
+}
+.form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+}
